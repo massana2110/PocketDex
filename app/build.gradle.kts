@@ -52,7 +52,6 @@ dependencies {
     // Feature modules
     implementation(project(":core:ui"))
     implementation(project(":core:data"))
-    implementation(project(":core:network"))
     implementation(project(":feature:pokemon-list"))
     implementation(project(":feature:pokemon-detail"))
 
