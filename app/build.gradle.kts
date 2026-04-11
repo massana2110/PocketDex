@@ -49,9 +49,13 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.koin.android)
 
-    // Feature modules
+    // Core modules
     implementation(project(":core:ui"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:network"))
     implementation(project(":core:data"))
+
+    // Feature modules
     implementation(project(":feature:pokemon-list"))
     implementation(project(":feature:pokemon-detail"))
 
