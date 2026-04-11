@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PocketDexTheme {
-                // TODO: Add entry-point app here
+                PokemonListScreen()
             }
         }
     }
