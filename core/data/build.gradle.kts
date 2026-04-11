@@ -23,6 +23,7 @@ android {
 dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:network"))
+    implementation(libs.retrofit)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.koin.android)
 }
