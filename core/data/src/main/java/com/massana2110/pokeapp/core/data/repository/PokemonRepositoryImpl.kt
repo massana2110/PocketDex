@@ -12,4 +12,7 @@ class PokemonRepositoryImpl(
 
     override suspend fun getPokemonGeneration1(): Result<List<Pokemon>> =
         networkCall { apiClient.getPokemonGeneration1() }.map { it.toDomain() }
+
+    override suspend fun searchPokemon(nameOrId: String): Result<Pokemon> =
+        networkCall { apiClient.searchPokemon(nameOrId) }.map { it.toDomain() }
 }

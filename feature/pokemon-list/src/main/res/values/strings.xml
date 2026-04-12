@@ -2,4 +2,5 @@
 <resources>
     <string name="pokemon_list_hello_label">¡Hola,</string>
     <string name="pokemon_list_welcome_label">bienvenido!</string>
+    <string name="pokemon_list_search_result_label">Resultado de búsqueda</string>
 </resources>

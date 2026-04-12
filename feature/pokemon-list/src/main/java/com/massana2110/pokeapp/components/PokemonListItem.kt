@@ -40,7 +40,7 @@ fun PokemonListItem(
         ) {
             Text(
                 modifier = Modifier.fillMaxWidth(),
-                text = "#$pokemonId",
+                text = "#%03d".format(pokemonId),
                 style = MaterialTheme.typography.bodySmall,
                 color = grayAA,
                 textAlign = TextAlign.End
