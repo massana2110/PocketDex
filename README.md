@@ -92,8 +92,6 @@ El APK generado se encontrará en `app/build/outputs/apk/debug/app-debug.apk`.
 
 ## Capturas de pantalla
 
-## Screenshots
-
 <table>
   <thead>
     <tr>
