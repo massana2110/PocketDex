@@ -39,19 +39,22 @@ import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
 fun PokemonListScreen(
+    onNavigateToPokemonDetail: (Int) -> Unit,
     viewModel: PokemonListViewModel = koinViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     PokemonListScreenContent(
         uiState = uiState,
-        onEvent = viewModel::onEvent
+        onEvent = viewModel::onEvent,
+        onNavigateToPokemonDetail = onNavigateToPokemonDetail
     )
 }
 
 @Composable
 private fun PokemonListScreenContent(
     uiState: PokemonListUiState,
-    onEvent: (PokemonListUiEvent) -> Unit = {}
+    onEvent: (PokemonListUiEvent) -> Unit = {},
+    onNavigateToPokemonDetail: (Int) -> Unit = {}
 ) {
     val displayedList by remember(uiState) {
         derivedStateOf {
@@ -118,7 +121,7 @@ private fun PokemonListScreenContent(
                                 pokemonId = pokemon.id,
                                 pokemonName = pokemon.name,
                                 pokemonImageUrl = pokemon.imageUrl,
-                                onClickPokemon = { onEvent(PokemonListUiEvent.OnClickPokemon(it)) }
+                                onClickPokemon = { onNavigateToPokemonDetail(it) }
                             )
                         }
                     }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.massana2110.pokeapp.navigation.PocketDexNavHost
 import com.massana2110.pokeapp.ui.theme.PocketDexTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PocketDexTheme {
-                PokemonListScreen()
+                PocketDexNavHost()
             }
         }
     }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pokemon_detail_weight_label">Peso</string>
+    <string name="pokemon_detail_height_label">Altura</string>
+    <string name="pokemon_detail_stats_title">Estadísticas</string>
+    <string name="pokemon_detail_hp_label">HP</string>
+    <string name="pokemon_detail_attack_label">Ataque</string>
+    <string name="pokemon_detail_defense_label">Defensa</string>
+    <string name="pokemon_detail_sp_attack_label">Ataque especial</string>
+    <string name="pokemon_detail_sp_defense_label">Defensa especial</string>
+    <string name="pokemon_detail_speed_label">Velocidad</string>
+</resources>

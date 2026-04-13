@@ -1,6 +1,7 @@
 package com.massana2110.pokeapp.ui.components.appbar
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -11,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.massana2110.pokeapp.core.ui.R
 import com.massana2110.pokeapp.ui.theme.PocketDexTheme
 import com.massana2110.pokeapp.ui.theme.gray7c
@@ -49,6 +51,7 @@ fun PocketDexTopBar(
         actions = {
             actionText?.let { text ->
                 Text(
+                    modifier = Modifier.padding(end = 16.dp),
                     text = text,
                     style = MaterialTheme.typography.bodyMedium,
                     color = gray7c
