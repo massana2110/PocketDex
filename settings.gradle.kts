@@ -24,3 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "PocketDex"
 include(":app")
+include(":core:domain")
+include(":core:network")
+include(":core:data")
+include(":core:ui")
+include(":feature:pokemon-list")
+include(":feature:pokemon-detail")
